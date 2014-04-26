@@ -2,6 +2,7 @@
 ##
 
 ## This functions creates the cache object
+# m is the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 m<-NULL
@@ -11,7 +12,7 @@ x<<-y
 m<<-NULL
 
 }
-get<-function(y)
+get<-function () x
 setinverse<-function(solve) m<<-solve
 getinverse<<-function () m
 
