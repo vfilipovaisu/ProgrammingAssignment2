@@ -26,8 +26,8 @@ getinverse=getinverse)
 ## This function calculates the inverse of a matrix
 
 cacheSolve <- function(x, ...) {
-
-m<-m$getinverse()
+  
+m<-x$getinverse()
 if(!is.null(m)) {
 message("getting cached data")
 return(m)
